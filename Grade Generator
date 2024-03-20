@@ -1,0 +1,31 @@
+print("Grade Generator")
+print()
+examName = input("Name of exam: ")
+maxScore = int(input("Maximum possible score on " + examName + ": "))
+yourScore = int(input("Your score on " + examName + ": "))
+yourPrecent = round(yourScore / maxScore * 100)
+print("You got ", yourPrecent, "% on", examName)
+if yourPrecent >= 93:
+  print("That's an A! Good job!")
+elif yourPrecent >= 90 and yourPrecent <= 92:
+  print("A-! Not bad. Not bad at all.")
+elif yourPrecent >= 87 and yourPrecent <= 89:
+  print("B+! Not bad. Could be better.")
+elif yourPrecent >= 83 and yourPrecent <= 86:
+  print("B. Hm. Study harder next time.")
+elif yourPrecent >= 80 and yourPrecent <= 82:
+  print("B-. Tsk tsk. You need to study harder.")
+elif yourPrecent >= 77 and yourPrecent <= 79:
+  print("C+! Seriously! Just study!")
+elif yourPrecent >= 73 and yourPrecent <= 76:
+  print("C! Come on! What the hell is that!")
+elif yourPrecent >= 70 and yourPrecent <= 72:
+  print("C-! Get your grades up!")
+elif yourPrecent >= 67 and yourPrecent <= 69:
+  print("D+! What the hell have you been doing! Atudy!")
+elif yourPrecent >= 63 and yourPrecent <= 66:
+  print("D. Wow. I'm not telling your parents.")
+elif yourPrecent >= 60 and yourPrecent <= 62:
+  print("I would clap but you got a D-.")
+else:
+  print("Congrats! You got an F! You failed! Did you even study! Well, at least I don't have to tell your parents about it!")
